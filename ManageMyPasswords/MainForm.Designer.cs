@@ -65,6 +65,7 @@ namespace ManageMyPasswords
             uppercaseToolStripMenuItem = new ToolStripMenuItem();
             numericToolStripMenuItem = new ToolStripMenuItem();
             specialToolStripMenuItem = new ToolStripMenuItem();
+            configurationToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             aboutToolStripMenuItem = new ToolStripMenuItem();
             helpContentsToolStripMenuItem = new ToolStripMenuItem();
@@ -73,10 +74,11 @@ namespace ManageMyPasswords
             // 
             // listViewPasswords
             // 
+            listViewPasswords.BackColor = SystemColors.Window;
             listViewPasswords.Location = new Point(20, 96);
             listViewPasswords.Margin = new Padding(5, 6, 5, 6);
             listViewPasswords.Name = "listViewPasswords";
-            listViewPasswords.Size = new Size(1442, 751);
+            listViewPasswords.Size = new Size(1605, 916);
             listViewPasswords.TabIndex = 0;
             listViewPasswords.UseCompatibleStateImageBehavior = false;
             listViewPasswords.View = View.Details;
@@ -84,48 +86,48 @@ namespace ManageMyPasswords
             // 
             // txtWebsite
             // 
-            txtWebsite.Location = new Point(20, 900);
+            txtWebsite.Location = new Point(20, 1060);
             txtWebsite.Margin = new Padding(5, 6, 5, 6);
             txtWebsite.Name = "txtWebsite";
-            txtWebsite.Size = new Size(331, 31);
+            txtWebsite.Size = new Size(274, 31);
             txtWebsite.TabIndex = 1;
             // 
             // txtCategory
             // 
-            txtCategory.Location = new Point(361, 900);
+            txtCategory.Location = new Point(304, 1060);
             txtCategory.Margin = new Padding(5, 6, 5, 6);
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(331, 31);
+            txtCategory.Size = new Size(274, 31);
             txtCategory.TabIndex = 2;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(703, 900);
+            txtUsername.Location = new Point(588, 1060);
             txtUsername.Margin = new Padding(5, 6, 5, 6);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(331, 31);
+            txtUsername.Size = new Size(274, 31);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(1047, 900);
+            txtPassword.Location = new Point(872, 1060);
             txtPassword.Margin = new Padding(5, 6, 5, 6);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(331, 31);
+            txtPassword.Size = new Size(274, 31);
             txtPassword.TabIndex = 4;
             // 
             // txtNotes
             // 
-            txtNotes.Location = new Point(20, 988);
+            txtNotes.Location = new Point(1168, 1060);
             txtNotes.Margin = new Padding(5, 6, 5, 6);
             txtNotes.Multiline = true;
             txtNotes.Name = "txtNotes";
-            txtNotes.Size = new Size(1442, 112);
+            txtNotes.Size = new Size(457, 116);
             txtNotes.TabIndex = 5;
             // 
             // btnRetrieve
             // 
-            btnRetrieve.Location = new Point(20, 1115);
+            btnRetrieve.Location = new Point(1653, 96);
             btnRetrieve.Margin = new Padding(5, 6, 5, 6);
             btnRetrieve.Name = "btnRetrieve";
             btnRetrieve.Size = new Size(200, 44);
@@ -136,7 +138,7 @@ namespace ManageMyPasswords
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(230, 1115);
+            btnDelete.Location = new Point(1653, 152);
             btnDelete.Margin = new Padding(5, 6, 5, 6);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(200, 44);
@@ -147,7 +149,7 @@ namespace ManageMyPasswords
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(440, 1115);
+            btnUpdate.Location = new Point(1653, 208);
             btnUpdate.Margin = new Padding(5, 6, 5, 6);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(200, 44);
@@ -158,7 +160,7 @@ namespace ManageMyPasswords
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(650, 1115);
+            btnGenerate.Location = new Point(1653, 264);
             btnGenerate.Margin = new Padding(5, 6, 5, 6);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(200, 44);
@@ -169,7 +171,7 @@ namespace ManageMyPasswords
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(860, 1115);
+            btnAdd.Location = new Point(1653, 320);
             btnAdd.Margin = new Padding(5, 6, 5, 6);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(200, 44);
@@ -181,7 +183,7 @@ namespace ManageMyPasswords
             // lblWebsite
             // 
             lblWebsite.AutoSize = true;
-            lblWebsite.Location = new Point(20, 869);
+            lblWebsite.Location = new Point(20, 1029);
             lblWebsite.Margin = new Padding(5, 0, 5, 0);
             lblWebsite.Name = "lblWebsite";
             lblWebsite.Size = new Size(67, 25);
@@ -191,7 +193,7 @@ namespace ManageMyPasswords
             // lblCategory
             // 
             lblCategory.AutoSize = true;
-            lblCategory.Location = new Point(361, 869);
+            lblCategory.Location = new Point(304, 1029);
             lblCategory.Margin = new Padding(5, 0, 5, 0);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(84, 25);
@@ -201,7 +203,7 @@ namespace ManageMyPasswords
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(703, 869);
+            lblUsername.Location = new Point(590, 1029);
             lblUsername.Margin = new Padding(5, 0, 5, 0);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(91, 25);
@@ -211,7 +213,7 @@ namespace ManageMyPasswords
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(1047, 869);
+            lblPassword.Location = new Point(872, 1029);
             lblPassword.Margin = new Padding(5, 0, 5, 0);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(87, 25);
@@ -221,7 +223,7 @@ namespace ManageMyPasswords
             // lblNotes
             // 
             lblNotes.AutoSize = true;
-            lblNotes.Location = new Point(20, 958);
+            lblNotes.Location = new Point(1168, 1029);
             lblNotes.Margin = new Padding(5, 0, 5, 0);
             lblNotes.Name = "lblNotes";
             lblNotes.Size = new Size(59, 25);
@@ -276,7 +278,7 @@ namespace ManageMyPasswords
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, optionsToolStripMenuItem, helpToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1482, 33);
+            menuStrip1.Size = new Size(1898, 33);
             menuStrip1.TabIndex = 20;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -303,7 +305,7 @@ namespace ManageMyPasswords
             // 
             // optionsToolStripMenuItem
             // 
-            optionsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { passwordLengthToolStripMenuItem, passwordCharactersToolStripMenuItem });
+            optionsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { passwordLengthToolStripMenuItem, passwordCharactersToolStripMenuItem, configurationToolStripMenuItem });
             optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             optionsToolStripMenuItem.Size = new Size(92, 29);
             optionsToolStripMenuItem.Text = "Options";
@@ -390,6 +392,13 @@ namespace ManageMyPasswords
             specialToolStripMenuItem.Text = "Special";
             specialToolStripMenuItem.CheckedChanged += characterTypeToolStripMenuItem_CheckedChanged;
             // 
+            // configurationToolStripMenuItem
+            // 
+            configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
+            configurationToolStripMenuItem.Size = new Size(276, 34);
+            configurationToolStripMenuItem.Text = "Configuration";
+            configurationToolStripMenuItem.Click += configurationToolStripMenuItem_Click;
+            // 
             // helpToolStripMenuItem
             // 
             helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem, helpContentsToolStripMenuItem });
@@ -410,21 +419,13 @@ namespace ManageMyPasswords
             helpContentsToolStripMenuItem.Size = new Size(227, 34);
             helpContentsToolStripMenuItem.Text = "Help Contents";
             helpContentsToolStripMenuItem.Click += helpContentsToolStripMenuItem_Click;
-            //
-            // configurationToolStripMenuItem
-            //
-            configurationToolStripMenuItem = new ToolStripMenuItem();
-            optionsToolStripMenuItem.DropDownItems.Add(configurationToolStripMenuItem);
-            configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            configurationToolStripMenuItem.Size = new Size(276, 34);
-            configurationToolStripMenuItem.Text = "Configuration";
-            configurationToolStripMenuItem.Click += new EventHandler(configurationToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1482, 1183);
+            BackColor = SystemColors.ControlLight;
+            ClientSize = new Size(1898, 1205);
             Controls.Add(lblCategoryFilter);
             Controls.Add(cmbCategoryFilter);
             Controls.Add(lblServiceFilter);
